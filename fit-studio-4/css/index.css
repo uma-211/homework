@@ -1,0 +1,107 @@
+.hero {
+  position: relative;
+  padding-top: 80px;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  bottom: 106px;
+  background: url(../images/декор.svg);
+  width: 100%;
+  height: 48px;
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.hero h1 {
+  margin-bottom: 40px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+  font-size: 62px;
+  line-height: 115%;
+  text-transform: uppercase;
+  color: #2c332f;
+}
+
+.hero h1 strong {
+  font-weight: 600;
+  color: #3596ed;
+}
+
+.left-side .text {
+  max-width: 440px;
+  margin-bottom: 140px;
+}
+
+.right-side {
+  position: relative;
+  display: flex;
+}
+
+.hero-choose {
+  padding: 22px;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 1px solid black;
+  max-width: 160px;
+  max-height: 86px;
+  background: rgb(255 255 255 / 0.9);
+  position: absolute;
+  text-align: center;
+}
+
+.news {
+  padding-top: 140px;
+}
+
+.news-container {
+  display: flex;
+  flex-direction: row;
+  gap: 28px;
+}
+
+.news h2 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 115%;
+  text-transform: uppercase;
+  color: #2c332f;
+  padding-bottom: 40px;
+}
+.news-block {
+  border: 1px solid #d3cbd9;
+  width: 284px;
+  height: 342px;
+}
+
+.news-block-header {
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 12px;
+}
+
+.news-text {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #2c332f;
+  padding-top: 8px;
+}
+
+.news-link {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #3596ed;
+  padding-left: 20px;
+}
