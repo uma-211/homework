@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="shortcut icon" href="./icons/icons8-сумка-для-покупок-32.png">
+  <script defer src="./js/index.js" type="module"></script>
+  <title>shop.co</title>
+</head>
+
+<body class="page__body">
+
+  <header class="header">
+
+    <div class="header__discount">
+      <div class="header__discount-text">
+        <p class="header__discount-paragraph">Зарегистрируйтесь и получите скидку 20% на первую
+          покупку.</p>
+        &nbsp;
+        <a href="#" class="header__discount-link">
+          Зарегистрироваться сейчас
+        </a>
+      </div>
+      <button class="btn header__close-button" title="Закрыть страницу" aria-label="Закрыть страницу">
+        <svg height="20" width="20">
+          <use class="header__close-icon" href="./icons/icons.svg#x"></use>
+        </svg>
+      </button>
+    </div>
+
+    <div class="header__container container">
+
+      <div class="header__main">
+        <button class="burger header__burger">
+          <svg width="24" height="24">
+            <use href="./icons/icons.svg#burger"></use>
+          </svg>
+        </button>
+
+        <a href="#" class="logo header__logo">
+          shop.co
+        </a>
+
+        <nav class="menu header__menu">
+          <ul class="menu__list">
+            <li class="header__menu-item">
+              <a class="menu-first-link" href="#">Магазин</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#">Скидки</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#">Новые поступления</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#">Бренды</a>
+            </li>
+          </ul>
+        </nav>
+
+        <form class="search menu__form" action="/search" method="get">
+          <svg height="21" width="21">
+            <use class="header__actions-search" href="./icons/icons.svg#search"></use>
+          </svg>
+          <input class="search__text" type="search" name="q" placeholder="Искать товары..." required>
+        </form>
+
+        <div class="header__actions">
+          <button class="header__actions-button adaptive-search">
+            <svg height="24" width="24">
+              <use class="header__actions-icon" href="./icons/icons.svg#adaptive-search"></use>
+            </svg>
+          </button>
+
+          <button class="header__actions-button">
+            <svg height="24" width="24">
+              <use class="header__actions-icon" href="./icons/icons.svg#basket"></use>
+            </svg>
+          </button>
+
+          <button class="header__actions-button">
+            <svg height="24" width="24">
+              <use class="header__actions-icon" href="./icons/icons.svg#profile"></use>
+            </svg>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <main class="main"></main>
+  <footer class="footer"></footer>
+</body>
+
+</html>
