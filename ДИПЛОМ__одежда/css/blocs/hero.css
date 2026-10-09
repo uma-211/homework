@@ -1,0 +1,385 @@
+.hero {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero__inner {
+  position: relative;
+  background-color: #f2f0f1;
+  overflow: hidden;
+}
+
+.hero__container {
+  position: relative;
+  padding-top: 0;
+  z-index: var(--layer-2);
+}
+
+.hero__header {
+  /* min-width=1280px max-width=1440px */
+  padding-top: clamp(70px, -3.125rem + 9.375vw, 85px);
+  padding-right: 0;
+  padding-bottom: clamp(68px, -19.75rem + 30vw, 116px);
+  padding-left: clamp(73px, -1.4375rem + 7.5vw, 85px);
+}
+
+.hero__headline {
+  font-family: var(--second-family);
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 112%;
+  max-width: 650px;
+  min-height: 168px;
+  color: var(--second-color);
+}
+
+.hero__paragraph {
+  font-family: var(--font-family);
+  font-weight: 400;
+  line-height: 138%;
+  max-width: 551px;
+  color: var(--gray-text);
+}
+
+.hero__button {
+  border-radius: 62px;
+  padding: 16px 54px;
+  width: 210px;
+  height: 52px;
+  background: var(--second-color);
+  margin-bottom: 48px;
+}
+
+.hero__button-text {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--main-color);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.hero__statistic {
+  display: flex;
+  align-items: center;
+  flex-flow: row nowrap;
+}
+
+.hero__statistic-item:first-child {
+  padding-right: 32px;
+}
+
+.hero__statistic-item:not(:first-child) {
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0 32px;
+}
+
+.hero__statistic-headline {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 40px;
+  color: var(--second-color);
+}
+
+.hero__statistic-paragraph {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 138%;
+  color: var(--gray-text);
+}
+
+.hero__image {
+  position: absolute;
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  right: 45px;
+  object-position: top;
+  display: block;
+  z-index: var(--layer-1);
+}
+
+.hero__image-small {
+  display: none;
+}
+
+.svg__star-big {
+  position: absolute;
+  top: 13%;
+  right: 5.56%;
+  z-index: var(--layer-3);
+}
+
+.svg__star-small {
+  position: absolute;
+  top: 44%;
+  left: 52%;
+  z-index: var(--layer-3);
+}
+
+.labels {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 122px;
+  padding-top: 0;
+  margin-top: 0;
+  background-color: var(--second-color);
+}
+
+.labels__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  gap: 106px;
+}
+
+@media (width < 1440px) {
+  .hero__statistic-item:first-child {
+    padding-right: 17px;
+  }
+
+  .hero__statistic-item:not(:first-child) {
+    padding: 0 17px;
+  }
+
+  .hero__statistic-item:last-child {
+    padding-right: 0;
+  }
+
+  .labels__list {
+    gap: 80px;
+  }
+}
+
+@media (width >= 1280px) {
+  .hero__headline {
+    margin-bottom: 34px;
+    font-size: 57px;
+  }
+
+  .hero__paragraph {
+    margin-bottom: 32px;
+    font-size: 16px;
+  }
+}
+
+@media (width < 1280px) {
+  .hero__header {
+    /* min-width=1024px max-width=1280px */
+    padding-bottom: clamp(34px, -6.375rem + 13.28vw, 68px);
+  }
+
+  .hero__headline {
+    font-size: 45px;
+    margin-bottom: 20px;
+  }
+
+  .hero__paragraph {
+    font-size: 14px;
+    max-width: 450px;
+    margin-bottom: 18px;
+  }
+
+  .hero__button {
+    margin-bottom: 34px;
+  }
+
+  .hero__statistic-headline {
+    font-size: 30px;
+  }
+
+  .hero__statistic-paragraph {
+    font-size: 12px;
+  }
+
+  .hero__image {
+    right: 20px;
+  }
+
+  .svg__star-big {
+    width: 76px;
+    height: 76px;
+  }
+
+  .svg__star-small {
+    width: 54px;
+    height: 54px;
+  }
+
+  .labels__list {
+    gap: 60px;
+  }
+
+  .label__versace {
+    width: 117px;
+    height: 23px;
+  }
+
+  .label__zara {
+    width: 64px;
+    height: 27px;
+  }
+
+  .label__gucci {
+    width: 110px;
+    height: 25px;
+  }
+
+  .label__prada {
+    width: 127px;
+    height: 21px;
+  }
+
+  .label__calvin {
+    width: 135px;
+    height: 22px;
+  }
+}
+
+@media (width < 1024px) {
+  .hero__header {
+    padding: 20px 0 11px 0;
+  }
+
+  .hero__headline {
+    margin-bottom: 9px;
+    max-width: 500px;
+    min-height: 50px;
+    font-size: 40px;
+    line-height: 106%;
+  }
+
+  .hero__paragraph {
+    margin-bottom: 15px;
+    line-height: 157%;
+    max-width: 400px;
+  }
+
+  .hero__button {
+    border-radius: 62px;
+    padding: 16px 54px;
+    width: 358px;
+    height: 52px;
+    margin-bottom: 20px;
+  }
+
+  .hero__statistic-headline {
+    font-size: 24px;
+  }
+
+  .hero__statistic-paragraph {
+    font-size: 12px;
+  }
+
+  .hero__image {
+    right: -15px;
+  }
+
+  .labels {
+    height: 100px;
+  }
+
+  .labels__list {
+    gap: 34px;
+  }
+}
+
+@media (width <= 768px) {
+  .hero__header {
+    padding-top: 40px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero__headline {
+    font-size: 32px;
+    line-height: 106%;
+  }
+
+  .hero__statistic {
+    justify-content: center;
+  }
+
+  .hero__image {
+    display: none;
+  }
+
+  .hero__image-small {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .svg__star-big {
+    top: 400px;
+  }
+
+  .svg__star-small {
+    top: 500px;
+    left: clamp(27px, -1.085rem + 11.38vw, 70px);
+  }
+
+  .labels {
+    height: 146px;
+  }
+
+  .labels__list {
+    margin-top: 40px;
+    margin-bottom: 39px;
+    row-gap: 20px;
+  }
+}
+
+@media (width < 480px) {
+  .hero__statistic {
+    row-gap: 12px;
+    flex-flow: row wrap;
+  }
+
+  .hero__statistic-item:first-child {
+    padding-right: 28px;
+  }
+
+  .hero__statistic-item:not(:first-child) {
+    padding-left: 28px;
+    padding-right: 0;
+  }
+
+  .hero__statistic-item:last-child {
+    margin-right: 40px;
+  }
+
+  .hero__statistic-item:last-child {
+    border-left: none;
+  }
+
+  .svg__star-big {
+    top: 430px;
+  }
+
+  .svg__star-small {
+    top: 530px;
+  }
+}
+
+@media (width <= 390px) {
+  .hero__header {
+    align-items: start;
+    text-align: start;
+  }
+
+  .hero__button {
+    align-self: center;
+  }
+}
