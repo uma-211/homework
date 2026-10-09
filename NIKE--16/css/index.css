@@ -1,0 +1,11 @@
+/* base */
+@import "./base/normalize.css";
+@import "./base/fonts.css";
+@import "./base/vars.css";
+@import "./base/globals.css";
+
+/* blocs */
+@import "./blocs/header.css";
+@import "./blocs/menu.css";
+@import "./blocs/burger.css";
+@import "./blocs/hero.css";
