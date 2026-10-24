@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="shortcut icon" href="./icons/icons8-сумка-для-покупок-32.png">
+  <script src="./js/index.js" type="module"></script>
+  <title>shop.co</title>
+</head>
+
+<body class="page__body">
+
+  <header class="header">
+
+    <div class="header__discount">
+      <div class="header__discount-text">
+        <p class="header__discount-paragraph">Зарегистрируйтесь и получите скидку 20% на первую
+          покупку.</p>
+        &nbsp;
+        <a href="#" class="header__discount-link">
+          Зарегистрироваться сейчас
+        </a>
+      </div>
+      <button class="btn header__close-button" title="Закрыть рекламу" aria-label="Закрыть рекламу">
+        <svg height="20" width="20">
+          <use class="header__close-icon" href="./icons/icons.svg#x"></use>
+        </svg>
+      </button>
+    </div>
+
+    <div class="header__container container">
+
+      <div class="header__main">
+        <button class="burger header__burger" aria-label="Открыть меню">
+          <svg width="24" height="24">
+            <use href="./icons/icons.svg#burger"></use>
+          </svg>
+        </button>
+
+        <a href="#" class="logo header__logo">
+          shop.co
+        </a>
+
+        <nav class="menu header__menu">
+          <ul class="menu__list">
+            <li class="header__menu-item">
+              <a class="menu-first-link" href="#Магазин">Магазин</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#Скидки">Скидки</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#Новые поступления">Новые поступления</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#Бренды">Бренды</a>
+            </li>
+          </ul>
+        </nav>
+
+        <form class="search menu__form" action="/search" method="get">
+          <svg height="21" width="21">
+            <use class="header__actions-search" href="./icons/icons.svg#search"></use>
+          </svg>
+          <input class="search__text" type="search" name="q" placeholder="Искать товары..." required>
+        </form>
+
+        <div class="header__actions">
+          <button class="header__actions-button adaptive-search" aria-label="Поиск">
+            <svg height="24" width="24">
+              <use class="header__actions-icon" href="./icons/icons.svg#adaptive-search"></use>
+            </svg>
+          </button>
+
+          <button class="header__actions-button" aria-label="Открыть корзину">
+            <svg height="24" width="24">
+              <use class="header__actions-icon" href="./icons/icons.svg#basket"></use>
+            </svg>
+          </button>
+
+          <button class="header__actions-button" aria-label="Личный кабинет">
+            <svg height="24" width="24">
+              <use class="header__actions-icon" href="./icons/icons.svg#profile"></use>
+            </svg>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="hero">
+      <div class="hero__inner">
+        <div class="container hero__container">
+          <header class="hero__header">
+            <h1 class="hero__headline">
+              найди одежду которая выразит твой стиль
+            </h1>
+            <p class="hero__paragraph">
+              Просмотрите наш набор тщательно сделанной одежды, созданный, чтобы подчеркнуть ваш индивидуальный стиль.
+            </p>
+            <button class="btn hero__button">
+              <p class="hero__button-text">Купить сейчас</p>
+            </button>
+            <ul class="hero__statistic">
+              <li class="hero__statistic-item">
+                <span class="hero__statistic-headline">200+</span>
+                <p class="hero__statistic-paragraph">Всемирных брендов</p>
+              </li>
+              <li class="hero__statistic-item">
+                <span class="hero__statistic-headline">2,000+</span>
+                <p class="hero__statistic-paragraph">Качественных товаров</p>
+              </li>
+              <li class="hero__statistic-item">
+                <span class="hero__statistic-headline">30,000+</span>
+                <p class="hero__statistic-paragraph">Счастливых клиентов</p>
+              </li>
+            </ul>
+          </header>
+          <svg width="104" height="104" class="svg__star-big">
+            <use href="./images/stars.svg#star-big"></use>
+          </svg>
+          <svg width="56" height="56" class="svg__star-small">
+            <use href="./images/stars.svg#star-small"></use>
+          </svg>
+        </div>
+        <picture>
+          <source srcset="./images/hero__img.webp" type="image/webp">
+          <img width="1440" height="663" src="./images/hero__img.jpg" alt="мужчина и женщина в модной одежде"
+            class="hero__image">
+        </picture>
+        <picture>
+          <source srcset="./images/small-image.webp" type="image/webp">
+          <img src="./images/small-image.jpg" alt="мужчина и женщина в модной одежде" class="hero__image-small">
+        </picture>
+
+
+
+      </div>
+
+      <section class="labels">
+        <ul class="labels__list">
+          <li class="labels__list-item">
+            <svg width="167" height="34" class="label__svg label__versace">
+              <use href="./icons/labels.svg#versace"></use>
+            </svg>
+          </li>
+          <li class="labels__list-item">
+            <svg width="91" height="38" class="label__svg label__zara">
+              <use href="./icons/labels.svg#zara"></use>
+            </svg>
+          </li>
+          <li class="labels__list-item">
+            <svg width="156" height="36" class="label__svg label__gucci">
+              <use href="./icons/labels.svg#gucci"></use>
+            </svg>
+          </li>
+          <li class="labels__list-item">
+            <svg width="194" height="32" class="label__svg label__prada">
+              <use href="./icons/labels.svg#prada"></use>
+            </svg>
+          </li>
+          <li class="labels__list-item">
+            <svg width="207" height="34" class="label__svg label__calvin">
+              <use href="./icons/labels.svg#calvin"></use>
+            </svg>
+          </li>
+        </ul>
+      </section>
+    </section>
+
+    <section id="Новые поступления" class="section">
+      <div class="container section__container">
+        <h2 class="catalog__headline">НОВЫЕ ПОСТУПЛЕНИЯ</h2>
+        <div class="catalog">
+
+          <article class="catalog__goods">
+            <div class="catalog__card">
+              <picture>
+                <source srcset="./images/футболка с лентой.webp" type="image/webp">
+                <img width="296" height="444" src="./images/футболка с лентой.jpg" alt="футболка с лентой"
+                  class="catalog__img">
+              </picture>
+
+            </div>
+            <span class="catalog__prg">Футболка с лентой</span>
+            <div class="catalog__rating">
+              <svg width="18" height="17" class="catalog__rating-star">
+                <use href="./icons/icons.svg#star"></use>
+              </svg>
+              <svg width="18" height="17" class="catalog__rating-star">
+                <use href="./icons/icons.svg#star"></use>
+              </svg>
+              <svg width="18" height="17" class="catalog__rating-star">
+                <use href="./icons/icons.svg#star"></use>
+              </svg>
+              <svg width="18" height="17" class="catalog__rating-star">
+                <use href="./icons/icons.svg#star"></use>
+              </svg>
+              <svg width="9" height="17" class="catalog__rating-star--half">
+                <use href="./icons/icons.svg#half-star"></use>
+              </svg>
+              <span class="catalog__rating-evaluation">4.5/5</span>
+            </div>
+            <div class="costs">
+              <p class="catalog__cost">₽5000</p>
+              <p class="catalog__cost-sale"></p>
+            </div>
+          </article>
+
+          <article class="catalog__goods">
+            <div class="catalog__card">
+              <picture>
+                <source srcset="./images/узкие джинсы.webp" type="image/webp">
+                <img width="268" height="402" src="./images/узкие джинсы.jpg" alt="узкие джинсы" class="catalog__img">
+              </picture>
+
+            </div>
+            <span class="catalog__prg">Узкие джинсы</span>
+            <div class="catalog__rating">
+              <svg width="18" height="17" class="catalog__rating-star">
+                <use href="./icons/icons.svg#star"></use>
+              </svg>
+              <svg width="18" height="17" class="catalog__rating-star">
+                <use href="./icons/icons.svg#star"></use>
+              </svg>
+              <svg width="18" height="17" class="catalog__rating-star">
+                <use href="./icons/icons.svg#star"></use>
+              </svg>
+              <svg width="9" height="17" class="catalog__rating-star--half">
+                <use href="./icons/icons.svg#half-star"></use>
+              </svg>
+              <span class="catalog__rating-evaluation">3.5/5</span>
+            </div>
+            <div class="costs">
+              <p class="catalog__cost">₽5000</p>
+              <p class="catalog__cost-sale">₽6000</p>
+              <span class="sale">
+                -20%
+              </span>
+            </div>
+          </article>
+
+          <article class="catalog__goods">
+            <div class="catalog__card">
+              <picture>
+                <source srcset="./images/клетчатая рубашка.webp" type="image/webp">
+                <img width="296" height="444" src="./images/клетчатая рубашка.jpg" alt="клетчатая рубашка"
+                  class="catalog__img">
+              </picture>
+
+            </div>
+            <span class="catalog__prg">Клетчатая рубашка</span>
+            <div class="catalog__rating">
+              <svg width="18" height="17" class="catalog__rating-star">
+                <use href="./icons/icons.svg#star"></use>
+              </svg>
+              <svg width="18" height="17" class="catalog__rating-star">
+                <use href="./icons/icons.svg#star"></use>
+              </svg>
+              <svg width="18" height="17" class="catalog__rating-star">
+                <use href="./icons/icons.svg#star"></use>
+              </svg>
+              <svg width="18" height="17" class="catalog__rating-star">
+                <use href="./icons/icons.svg#star"></use>
+              </svg>
+              <svg width="9" height="17" class="catalog__rating-star--half">
+                <use href="./icons/icons.svg#half-star"></use>
+              </svg>
+              <span class="catalog__rating-evaluation">4.5/5</span>
+            </div>
+            <div class="costs">
+              <p class="catalog__cost">₽7000</p>
+              <p class="catalog__cost-sale"></p>
+            </div>
+          </article>
+
+          <article class="catalog__goods">
+            <div class="catalog__card">
+              <picture>
+                <source srcset="./images/футболка с полосами.webp" type="image/webp">
+                <img width="296" height="444" src="./images/футболка с полосами.jpg" alt="футболка с полосами"
+                  class="catalog__img">
+              </picture>
+
+            </div>
+            <span class="catalog__prg">Футболка с полосами</span>
+            <div class="catalog__rating">
+              <svg width="18" height="17" class="catalog__rating-star">
+                <use href="./icons/icons.svg#star"></use>
+              </svg>
+              <svg width="18" height="17" class="catalog__rating-star">
+                <use href="./icons/icons.svg#star"></use>
+              </svg>
+              <svg width="18" height="17" class="catalog__rating-star">
+                <use href="./icons/icons.svg#star"></use>
+              </svg>
+              <svg width="18" height="17" class="catalog__rating-star">
+                <use href="./icons/icons.svg#star"></use>
+              </svg>
+              <svg width="9" height="17" class="catalog__rating-star--half">
+                <use href="./icons/icons.svg#half-star"></use>
+              </svg>
+              <span class="catalog__rating-evaluation">4.5/5</span>
+            </div>
+            <div class="costs">
+              <p class="catalog__cost">₽6000</p>
+              <p class="catalog__cost-sale">₽8000</p>
+              <span class="sale">
+                -25%
+              </span>
+            </div>
+          </article>
+
+        </div>
+        <button class="catalog__btn btn">
+          <p class="button__text">Посмотреть всё</p>
+        </button>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container section__container section__container-second">
+        <h2 class="catalog__headline-second">ЛИДЕРЫ ПРОДАЖ</h2>
+        <div class="catalog">
+
+          <article class="catalog__goods">
+            <div class="catalog__card">
+              <picture>
+                <source srcset="./images/рубашка в полоску.webp" type="image/webp">
+                <img width="296" height="444" src="./images/рубашка в полоску.jpg" alt="рубашка в полоску"
+                  class="catalog__img">
+              </picture>
+
+            </div>
+            <span class="catalog__prg">Рубашка в полоску</span>
+            <div class="catalog__rating">
+              <svg width="18" height="17" class="catalog__rating-star">
+                <use href="./icons/icons.svg#star"></use>
+              </svg>
+              <svg width="18" height="17" class="catalog__rating-star">
+                <use href="./icons/icons.svg#star"></use>
+              </svg>
+              <svg width="18" height="17" class="catalog__rating-star">
+                <use href="./icons/icons.svg#star"></use>
+              </svg>
+              <svg width="18" height="17" class="catalog__rating-star">
+                <use href="./icons/icons.svg#star"></use>
+              </svg>
+              <svg width="18" height="17" class="catalog__rating-star">
+                <use href="./icons/icons.svg#star"></use>
+              </svg>
+              <span class="catalog__rating-evaluation">5.0/5</span>
+            </div>
+            <div class="costs">
+              <p class="catalog__cost">₽5000</p>
+              <p class="catalog__cost-sale">₽6000</p>
+              <span class="sale">
+                -20%
+              </span>
+            </div>
+          </article>
+
+          <article class="catalog__goods">
+            <div class="catalog__card">
+              <picture>
+                <source srcset="./images/Футболка «Courage».webp" type="image/webp">
+                <img width="294" height="441" src="./images/Футболка «Courage».jpg" alt="Футболка «Courage»"
+                  class="catalog__img">
+              </picture>
+
+            </div>
+            <span class="catalog__prg">Футболка «Courage»</span>
+            <div class="catalog__rating">
+              <svg width="18" height="17" class="catalog__rating-star">
+                <use href="./icons/icons.svg#star"></use>
+              </svg>
+              <svg width="18" height="17" class="catalog__rating-star">
+                <use href="./icons/icons.svg#star"></use>
+              </svg>
+              <svg width="18" height="17" class="catalog__rating-star">
+                <use href="./icons/icons.svg#star"></use>
+              </svg>
+              <svg width="18" height="17" class="catalog__rating-star">
+                <use href="./icons/icons.svg#star"></use>
+              </svg>
+              <span class="catalog__rating-evaluation">4.0/5</span>
+            </div>
+            <div class="costs">
+              <p class="catalog__cost">₽5000</p>
+              <p class="catalog__cost-sale"></p>
+            </div>
+
+          </article>
+
+          <article class="catalog__goods">
+            <div class="catalog__card">
+              <picture>
+                <source srcset="./images/свободные бермуды.webp" type="image/webp">
+                <img width="296" height="444" src="./images/свободные бермуды.jpg" alt="свободные бермуды"
+                  class="catalog__img">
+              </picture>
+
+            </div>
+            <span class="catalog__prg">Свободные бермуды</span>
+            <div class="catalog__rating">
+              <svg width="18" height="17" class="catalog__rating-star">
+                <use href="./icons/icons.svg#star"></use>
+              </svg>
+              <svg width="18" height="17" class="catalog__rating-star">
+                <use href="./icons/icons.svg#star"></use>
+              </svg>
+              <svg width="18" height="17" class="catalog__rating-star">
+                <use href="./icons/icons.svg#star"></use>
+              </svg>
+              <span class="catalog__rating-evaluation">3.0/5</span>
+            </div>
+            <div class="costs">
+              <p class="catalog__cost">₽4000</p>
+              <p class="catalog__cost-sale"></p>
+            </div>
+          </article>
+
+          <article class="catalog__goods">
+            <div class="catalog__card">
+              <picture>
+                <source srcset="./images/потертые узкие джинсы.webp" type="image/webp">
+                <img width="252" height="378" src="./images/потертые узкие джинсы.jpg" alt="потертые узкие джинсы"
+                  class="catalog__img">
+              </picture>
+
+            </div>
+            <span class="catalog__prg">Потертые узкие джинсы</span>
+            <div class="catalog__rating">
+              <svg width="18" height="17" class="catalog__rating-star">
+                <use href="./icons/icons.svg#star"></use>
+              </svg>
+              <svg width="18" height="17" class="catalog__rating-star">
+                <use href="./icons/icons.svg#star"></use>
+              </svg>
+              <svg width="18" height="17" class="catalog__rating-star">
+                <use href="./icons/icons.svg#star"></use>
+              </svg>
+              <svg width="18" height="17" class="catalog__rating-star">
+                <use href="./icons/icons.svg#star"></use>
+              </svg>
+              <svg width="9" height="17" class="catalog__rating-star--half">
+                <use href="./icons/icons.svg#half-star"></use>
+              </svg>
+              <span class="catalog__rating-evaluation">4.5/5</span>
+            </div>
+            <div class="costs">
+              <p class="catalog__cost">₽7000</p>
+              <p class="catalog__cost-sale"></p>
+            </div>
+          </article>
+
+        </div>
+        <button class="catalog__btn btn">
+          <p class="button__text">Посмотреть всё</p>
+        </button>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+  </footer>
+</body>
+
+</html>

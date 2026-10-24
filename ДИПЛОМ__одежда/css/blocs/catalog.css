@@ -1,0 +1,271 @@
+.section__container {
+  max-width: 1240px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.section__container-second {
+  border: none;
+}
+
+.catalog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.catalog__headline {
+  font-family: var(--second-family);
+  font-weight: 900;
+  font-size: clamp(27px, 1.2rem + 2vw, 48px);
+  color: #000;
+  margin-top: 72px;
+  margin-bottom: 55px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.catalog__headline-second {
+  font-family: var(--second-family);
+  font-weight: 900;
+  font-size: clamp(27px, 1.2rem + 2vw, 48px);
+  color: #000;
+  margin-top: 64px;
+  margin-bottom: 55px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* расположение карточек */
+
+.catalog {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.catalog__goods {
+  display: flex;
+  flex-direction: column;
+}
+
+/* карточка товара */
+
+.catalog__card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 20px;
+  width: 295px;
+  height: 298px;
+  margin-bottom: 16px;
+  background: #f0eeed;
+}
+
+.catalog__img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.catalog__prg {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 8px;
+  color: #000;
+}
+
+.catalog__rating {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 5px;
+  margin-bottom: 8px;
+}
+
+.catalog__rating-evaluation {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  margin-left: 8px;
+  color: #000;
+}
+
+/* цена и скидки */
+
+.costs {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 10px;
+}
+
+.catalog__cost {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 24px;
+  color: #000;
+}
+
+.catalog__cost-sale {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 24px;
+  text-decoration: line-through;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.sale {
+  border-radius: 62px;
+  padding: 6px 14px;
+  width: 58px;
+  height: 28px;
+  background: rgba(255, 51, 51, 0.1);
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 12px;
+  color: #f33;
+}
+
+/* кнопка */
+
+.catalog__btn {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 62px;
+  padding: 16px 54px;
+  width: 218px;
+  height: 52px;
+  margin-top: 36px;
+  margin-bottom: 64px;
+}
+
+.button__text {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  color: #000;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* адаптация */
+
+@media (width <= 1280px) {
+  .catalog {
+    gap: 15px;
+  }
+
+  .catalog__card {
+    width: clamp(230px, 4.375rem + 15.63vw, 270px);
+    height: clamp(233px, 4.563rem + 15.63vw, 273px);
+  }
+
+  .catalog__cost {
+    font-size: 21px;
+  }
+
+  .catalog__cost-sale {
+    font-size: 21px;
+  }
+}
+
+@media (width < 1024px) {
+  .catalog {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (width <= 580px) {
+  .catalog {
+    gap: 15px;
+  }
+
+  .catalog__btn {
+    width: 358px;
+    height: 46px;
+    margin-top: 27px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (width < 580px) {
+  .catalog {
+    gap: 10px;
+  }
+
+  .catalog__headline {
+    margin-top: 52px;
+    margin-bottom: 32px;
+  }
+
+  .catalog__headline-second {
+    margin-top: 42px;
+    margin-bottom: 32px;
+  }
+
+  .catalog__card {
+    border-radius: 13px;
+    width: 173px;
+    height: 200px;
+    margin-bottom: 11px;
+  }
+
+  .catalog__goods:nth-child(n + 3) {
+    display: none;
+  }
+
+  .catalog__prg {
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+
+  .catalog__rating {
+    margin-bottom: 4px;
+  }
+
+  .catalog__rating-star {
+    width: 15px;
+    height: 14px;
+  }
+
+  .catalog__rating-star--half {
+    width: 8px;
+    height: 14px;
+  }
+
+  .catalog__rating-evaluation {
+    font-size: 12px;
+    margin-left: 6px;
+  }
+
+  .costs {
+    gap: 5px;
+  }
+
+  .catalog__cost {
+    font-size: 18px;
+  }
+
+  .catalog__cost-sale {
+    font-size: 18px;
+  }
+
+  .sale {
+    padding: 4px 8px;
+    width: 40px;
+    height: 20px;
+    font-size: 10px;
+  }
+
+  .button__text {
+    font-size: 14px;
+  }
+}
