@@ -1,0 +1,202 @@
+.reviews__container {
+  max-width: 1240px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+
+.reviews__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (width > 580px) {
+  .reviews__header {
+    padding-bottom: 40px;
+  }
+}
+
+@media (width <= 580px) {
+  .reviews__header {
+    padding-bottom: 24px;
+  }
+}
+
+.reviews__controls {
+  display: flex;
+  gap: 16px;
+}
+
+.review__slider-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  transition: opacity var(--transition-time);
+  color: black;
+}
+
+.review__slider-button:hover {
+  opacity: 0.6;
+}
+
+.review__slider-button.swiper-button-disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.review__slider {
+  width: 100%;
+}
+
+.swiper-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+/* заголовок */
+
+.reviews__title {
+  text-align: start;
+}
+
+@media (width > 580px) {
+  .reviews__title {
+    text-align: start;
+  }
+}
+
+@media (width <= 580px) {
+  .reviews__title {
+    font-size: 30px;
+    line-height: 120%;
+    max-width: 246px;
+  }
+}
+
+/* карточка отзыва */
+
+.review {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  transition:
+    filter 0.3s ease,
+    opacity 0.3s ease;
+}
+
+@media (width > 580px) {
+  .review {
+    padding: 28px 32px;
+    width: 400px;
+    height: 240px;
+  }
+}
+
+@media (width <= 580px) {
+  .review {
+    padding: 24px;
+    width: 358px;
+    height: 186px;
+  }
+}
+
+.swiper-slide .review {
+  filter: blur(5px);
+  opacity: 0.6;
+  transition:
+    filter 0.3s ease,
+    opacity 0.3s ease;
+  pointer-events: none;
+}
+
+@media (width >= 1024px) {
+  .swiper-slide-active .review,
+  .swiper-slide-prev .review,
+  .swiper-slide-next .review {
+    filter: blur(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+
+@media (width >= 580px) and (width < 1024px) {
+  .swiper-slide-active .review,
+  .swiper-slide-next .review {
+    filter: blur(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+
+@media (width < 580px) {
+  .swiper-slide-active .review {
+    filter: blur(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+
+/* оценка */
+
+.review__rating {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+@media (width > 580px) {
+  .review__rating {
+    padding-bottom: 15px;
+    gap: 6px;
+  }
+}
+
+@media (width <= 580px) {
+  .review__rating {
+    padding-bottom: 12px;
+    gap: 5px;
+  }
+
+  .review__rating-star {
+    width: 19px;
+    height: 18px;
+  }
+}
+
+/* никнейм пользователя */
+
+.review__nick::after {
+  content: "";
+  display: inline-block;
+  margin-left: 4px;
+  position: relative;
+  background: url(../../images/verification-icon.svg) center / contain no-repeat;
+  transform: translateY(15%);
+}
+
+@media (width > 580px) {
+  .review__nick {
+    line-height: 110%;
+    margin-bottom: 12px;
+  }
+
+  .review__nick::after {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@media (width <= 580px) {
+  .review__nick {
+    font-size: 16px;
+    line-height: 138%;
+    margin-bottom: 8px;
+  }
+
+  .review__nick::after {
+    width: 19px;
+    height: 19px;
+  }
+}
